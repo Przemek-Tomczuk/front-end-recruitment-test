@@ -1,0 +1,10 @@
+<script>
+    function cloneBacon () {
+        const image = new Image(560,440)
+        image.src  = 'images/bacon.jpg'
+        document.body.appendChild(image)
+    }
+    var buttons = document.querySelector("button")
+    buttons.addEventListener("click", cloneBacon);
+</script>
+
