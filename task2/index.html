@@ -10,20 +10,23 @@
 </head>
 <body>
     <div id="container">
+        <div id="error"></div>
+        <div id="secondError"></div>
+        <form id="form" action="/" method="GET">
         <div id="personalInformation">
             <p class="number">1</p>
             <h5>PERSONAL INFORMATION</h5>
             <div class='full-input'>
                 <label for='firstName'>First name</label>
-                <input type='text' name='firstName'></input>
+                <input type='text' name='firstName' id="firstName"></input>
             </div>  
             <div class='full-input'>
                 <label for='lastName'>Last name</label>
-                <input type='text' name='lastName'></input>
+                <input type='text' name='lastName' id="lastName"></input>
             </div>
             <div class='full-input'>
                 <label for='mail'>Email</label>
-                <input type='text' name='mail'></input>
+                <input type='text' name='mail' id="mail"></input>
             </div>
             <div class='full-input'>
                 <label for='country'>Country</label>
@@ -277,11 +280,11 @@
             </div>
             <div class='full-input'>
                 <label for='postalCode'>Postal Code</label>
-                <input type='text' name='postalCode'></input>
+                <input type='text' name='postalCode' id="postalCode"></input>
             </div>
             <div class='full-input'>
                 <label for='phone'>Phone Number</label>
-                <input type='text' name='phone'></input>
+                <input type='text' name='phone' id="phone"></input>
             </div>
         </div>                      
         <div id="paymentDetails">
@@ -291,20 +294,21 @@
             <div class='full-input-2'>
                 <img class="card" src="visa.png">
                 <label for='creditCard'>Credit Card Number</label>
-                <input type='text' name='creditCard'></input>
+                <input type='text' name='creditCard' id='creditCard'></input>
             </div>
             <div class='full-input-2'>
                 <label for='securityCode'>Security code</label>
                 <i class="far fa-question-circle"></i>
-                <input type='text' name='securityCode'></input>
+                <input type='text' name='securityCode' id="securityCode"></input>
             </div>
             <div class='full-input-2'>
                 <label for='expirationDate'>Expiration date</label>
-                <input type='text' name='expirationDate'></input>
+                <input type='text' name='expirationDate' id="expirationDate"></input>
             </div>
         </div>
-        <button id="purchase">COMPLETE PURCHASE</button>
+        <button id="purchase" type="submit">COMPLETE PURCHASE</button>
         <i class="fas fa-shopping-cart"></i>
+        </form>
         <div id="order">
             <div id="inner">
                 <h5 id="orderHeader">YOUR ORDER</h5>
@@ -326,5 +330,6 @@
 </body>
 <script src="js/app.js">
 </script>
+<script src="script.js"></script>
 <script src="less.js-master/dist/less.js" type="text/javascript"></script>
 </html>
